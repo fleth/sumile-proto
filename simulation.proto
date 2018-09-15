@@ -1,5 +1,9 @@
 syntax = "proto3";
 
+service Simulator {
+    rpc Simulate (SimulationParam) returns (SimulationResult)
+}
+
 message SimulationParam {
     string date = 1;
     int32 term = 2;
