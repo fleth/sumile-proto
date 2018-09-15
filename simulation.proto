@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+message SimulationParam {
+    string date = 1;
+    int32 term = 2;
+    Env env = 3;
+    int64 assets = 4;
+
+    enum Env {
+        PRODUCTION = 0;
+        DEVELOP = 1;
+    }
+}
+
+message SimulationResult {
+    repeated Report = 1;
+
+}
+
+message Report {
+    string date = 1;
+    int32 code = 2;
+    Order order = 3;
+    int64 assets = 4;
+}
+
+message Order {
+    Method method = 1;
+    int32 num = 2;
+
+    enum Method {
+        BUY = 0;
+        SELL = 1;
+    }
+}
