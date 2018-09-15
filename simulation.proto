@@ -13,8 +13,7 @@ message SimulationParam {
 }
 
 message SimulationResult {
-    repeated Report = 1;
-
+    repeated Report report = 1;
 }
 
 message Report {
