@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 service Simulator {
-    rpc Simulate (SimulationParam) returns (SimulationResult)
+    rpc Simulate (SimulationParam) returns (SimulationResult) {}
 }
 
 message SimulationParam {
