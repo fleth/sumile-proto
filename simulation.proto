@@ -17,22 +17,11 @@ message SimulationParam {
 }
 
 message SimulationResult {
-    repeated Report report = 1;
+    Report report = 1;
 }
 
 message Report {
-    string date = 1;
-    int32 code = 2;
-    Order order = 3;
-    int64 assets = 4;
-}
-
-message Order {
-    Method method = 1;
-    int32 num = 2;
-
-    enum Method {
-        BUY = 0;
-        SELL = 1;
-    }
+    string log = 1;
+    int64 gain = 2;
+    float max_drawdown = 3;
 }
