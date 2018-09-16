@@ -1,5 +1,7 @@
 syntax = "proto3";
 
+option java_package = "bottlefoxy.sumile";
+
 service Simulator {
     rpc Simulate (SimulationParam) returns (SimulationResult) {}
 }
