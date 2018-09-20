@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option java_package = "bottlefoxy.sumile";
+
+service StockData {
+    rpc Status () returns (StockDataStatus) {}
+}
+
+message StockDataStatus {
+    repeated Status daily = 1;
+    repeated Status realtime = 2;
+}
+
+message RealtimeStatus {
+    int32 code = 1;
+    string update_date = 2;
+}
