@@ -21,6 +21,6 @@ message StrategyResponse {
 
 message StrategySetting {
     string key = 1;
-    repeated string and = 2;
+    repeated string all = 2;
     repeated string any = 3;
 }
