@@ -3,7 +3,7 @@ syntax = "proto3";
 option java_package = "bottlefoxy.sumile";
 
 service Strategy {
-    rpc strategy (StrategyRequest) returns (StrategyResponse) {}
+    rpc Strategy (StrategyRequest) returns (StrategyResponse) {}
 }
 
 message StrategyRequest {
